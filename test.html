@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>append demo</title>
+  <style>
+  p {
+    background: yellow;
+  }
+  </style>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<p>I would like to say: </p>
+ 
+<script>
+$( "p" ).append( "<strong>Bollo</strong>" );
+$( "p" ).append( "<strong>Hello</strong>" );
+$.get( "https://api.indix.com/v1/brands?app_id=ccd61d40&app_key=e9d1a5ac51b6f448a50443ec6742e188&query=nike", function( data ) {
+  $( "p" ).append( "<strong>Mello</strong>" );
+}, "json" );
+</script>
+ 
+</body>
+</html>
